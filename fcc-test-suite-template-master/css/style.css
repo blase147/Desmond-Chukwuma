@@ -26,28 +26,14 @@ body::before {
     box-sizing: border-box;
   }
   
-  @media (min-width: 768px) .container {
-    max-width: 720px;
-  }
-  
-  @media (min-width: 576px) .container {
-    max-width: 540px;
-  }
-  
   .container {
-    width: 50%;
-    margin: 3.125rem auto 0 auto;
+    margin-left:10% ;
+    margin-right: 10%;
   }
-  
-  .title {}
   
   .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
-  }
-  
-  @media (min-width: 480px) form {
-    padding: 2.5rem;
   }
   
   form {
@@ -121,8 +107,6 @@ body::before {
     cursor: default;
   }
   
-  .name-label {}
-  
   .survey-form {
     padding: 40px;
     margin-left: 150px;
@@ -132,19 +116,7 @@ body::before {
    max-width:720px;
    margin:0 auto;
   }
-  
-  .email-label {}
-  
-  .number-label {}
-  
-  .name {}
-  
-  .email {}
-  
-  .age {}
-  
-  .role {}
-  
+
   .form-control {
     display: block;
     width: 100%;
@@ -171,38 +143,3 @@ body::before {
     font-size: inherit;
     line-height: inherit;
   }
-  
-  .input-radio {}
-  
-  .fav-feature {}
-  
-  .input-checkbox {}
-  
-  #main-wrapper {}
-  
-  #title {}
-  
-  #description {}
-  
-  #form-content {}
-  
-  #survey-form {}
-  
-  #name {}
-  
-  #email {}
-  
-  #age {}
-  
-  #number-label {}
-  
-  #role {}
-  
-  #role {}
-  
-  #fav-feature {}
-  
-  #most-like {}
-  
-  #comments {}
-  
