@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <header class="header">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- page content here -->
     <div class="fullpage">
-      <header class="header">
         <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
         <p id="description" class="description text-center">
           Thank you for taking the time to help us improve the platform
@@ -19,22 +19,22 @@
         <form id="survey-form" class="survey-form" action="index.html" method="post">
           <div class="form-group">
             <label id="name-label" for="name">Name</label><br>
-            <input id="name" type="text" name="name" placeholder="Enter your name" required><br><br>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
           </div>
   
           <div class="form-group">
             <label id="email-label" for="email">Email</label><br>
-            <input id="email" type="email" name="email" placeholder="Enter your Email" required> <br><br>
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required> <br>
           </div>
   
           <div class="form-group">
             <label id="number-label" for="Age">Age <span class="clue">(optional)</span></label><br>
-            <input type="number" id="age" name="quantity" min="1" max="65" class="form-control" placeholder="Age" required>
+            <input type="number" id="number" name="quantity" min="15" max="65" class="form-control" placeholder="Age" required>
           </div>
   
           <div class="form-group">
             <p>Which option best decribes your current role?</p>
-            <select id="role" class="form-control" name="role" required>
+            <select id="dropdown" class="form-control" name="role" required>
               <option disabled selected value>Select current role</option>
               <option value="Student">Student</option>
               <option value="job">Fulltime job</option>
@@ -47,11 +47,11 @@
           <div class="form-group">
             <p>Would you recommned FreeCode freeCodeCamp to a friend?</p>
             <label>
-              <input type="radio" name="user-recommend" value="definately" class="input-radio" checked>Definately</label><br><br>
+              <input type="radio" name="user-recommend" value="definately" class="input-radio" checked>Definately</label><br>
             <label>
-              <input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe</label><br><br>
+              <input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe</label><br>
             <label>
-              <input type="radio" name="user-recommend" value="Not sure" class="input-radio">Not sure</label><br><br>
+              <input type="radio" name="user-recommend" value="Not sure" class="input-radio">Not sure</label><br>
           </div>
   
           <div class="form-group">
@@ -69,48 +69,32 @@
             <p>What would you like to see improved? <span>(Check all that apply)</span></p>
             <label>
               <input type="checkbox" name="prefer" value="front-end-rojects" class="input-checkbox">
-              Front-end Projects</label><br><br>
+              Front-end Projects</label><br>
   
             <label>
-              <input type="checkbox" name="advice" value="Back-end Projects" class="input-checkbox">
-              Back-end Projects</label><br><br>
+              <input type="checkbox" name="back-end" value="Back-end Projects" class="input-checkbox">
+              Back-end Projects</label><br>
   
             <label>
-              <input type="checkbox" name="advice" value="Data Visualisation" class="input-checkbox">
-              Data Visualisation</label><br><br>
+              <input type="checkbox" name="data-visualisation" value="data-visualisation" class="input-checkbox">
+              Data Visualisation</label><br>
   
             <label>
-              <input type="checkbox" name="advice" value="Challenges" class="input-checkbox">
-              Challenges</label><br><br>
+              <input type="checkbox" name="challenges" value="challenges" class="input-checkbox">
+              Challenges</label><br>
+
+            <label>
+              <input type="checkbox" name="help-room" value="help-room" class="input-checkbox">
+              Gitter help rooms</label><br>
   
             <label>
-              <input type="checkbox" name="advice" value="Open Source Community" class="input-checkbox">
-              Open Source Community</label><br><br>
-  
-            <label>
-              <input type="checkbox" name="advice" value="Gitter help rooms" class="input-checkbox">
-              Gitter help rooms</label><br><br>
-  
-            <label>
-              <input type="checkbox" name="advice" value="Videos" class="input-checkbox">
-              Videos</label><br><br>
-  
-            <label>
-              <input type="checkbox" name="advice" value="City Meetups" class="input-checkbox">
-              City Meetups</label><br><br>
-  
-            <label>
-              <input type="checkbox" name="advice" value="Forum" class="input-checkbox">
-              Forum</label><br><br>
-  
-            <label>
-              <input type="checkbox" name="advice" value="Additional Courses" class="input-checkbox">
+              <input type="checkbox" name="additional-course" value="additional-course" class="input-checkbox">
               Additional Courses</label>
           </div>
   
           <div class="form-group">
             <p>Any comments or suggestions</p>
-            <textarea id="comments" name="comments" rows="8" cols="80" placeholder="Enter your comments here"></textarea>
+            <textarea  id="comments" name="comments" rows="6" cols="60" placeholder="Enter your comments here"></textarea>
           </div>
   
           <div class="form-group">
@@ -120,18 +104,8 @@
   
       </div>
     </div>
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <!-- JavaScript Links Here-->
     <script  src="js/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
